@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #111;
+  color: #f1f1f1;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #0ff;
+}
+
+header p {
+  color: #aaa;
+  font-size: 1.1rem;
+}
+
+.produk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.produk-card {
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.produk-card:hover {
+  transform: translateY(-5px);
+}
+
+.produk-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.produk-card h2 {
+  color: #0ff;
+  margin-bottom: 5px;
+}
+
+.produk-card p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.harga {
+  display: block;
+  margin: 10px 0;
+  color: #f39c12;
+  font-weight: bold;
+}
+
+.btn {
+  display: inline-block;
+  background: #00cec9;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #00b894;
+}
+
+footer {
+  text-align: center;
+  margin-top: 60px;
+  color: #888;
+  font-size: 0.9rem;
+}
