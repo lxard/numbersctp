@@ -5,87 +5,118 @@
 }
 
 body {
-  background: #111;
-  color: #f1f1f1;
   font-family: 'Segoe UI', sans-serif;
-  padding: 20px;
+  background: #0f1116;
+  color: #fff;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+.glass-effect {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://files.catbox.moe/myrot3.jpeg') repeat center center;
+  opacity: 0.12;
+  filter: blur(1.5px) brightness(1.1) saturate(1.1);
+  z-index: -1;
 }
 
 header {
   text-align: center;
-  margin-bottom: 40px;
+  padding: 2rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 header h1 {
   font-size: 2.5rem;
-  color: #0ff;
+  margin-bottom: 0.5rem;
 }
 
 header p {
+  font-size: 1.2rem;
   color: #aaa;
-  font-size: 1.1rem;
 }
 
 .produk-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  gap: 1.5rem;
+  padding: 2rem;
 }
 
 .produk-card {
-  background: #1e1e1e;
-  border-radius: 10px;
-  padding: 15px;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
-  text-align: center;
-  transition: transform 0.2s;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
 }
 
 .produk-card:hover {
-  transform: translateY(-5px);
+  transform: scale(1.03);
 }
 
 .produk-card img {
   width: 100%;
-  border-radius: 6px;
-  margin-bottom: 10px;
+  height: auto;
+  display: block;
 }
 
 .produk-card h2 {
-  color: #0ff;
-  margin-bottom: 5px;
+  font-size: 1.5rem;
+  margin: 1rem;
 }
 
 .produk-card p {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: #ccc;
+  margin: 0 1rem 1rem;
 }
 
 .harga {
   display: block;
-  margin: 10px 0;
-  color: #f39c12;
   font-weight: bold;
+  font-size: 1.2rem;
+  color: #4ef2b8;
+  margin: 0 1rem 1rem;
 }
 
 .btn {
   display: inline-block;
-  background: #00cec9;
+  background-color: #4ef2b8;
   color: #000;
-  padding: 10px 20px;
-  border-radius: 6px;
+  text-align: center;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.3s;
+  margin: 0 1rem 1rem;
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-  background: #00b894;
+  background-color: #3bd8a0;
 }
 
 footer {
   text-align: center;
-  margin-top: 60px;
-  color: #888;
+  padding: 1.5rem 1rem;
+  background: rgba(255, 255, 255, 0.04);
   font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer a {
+  color: #4ef2b8;
+  text-decoration: none;
 }
